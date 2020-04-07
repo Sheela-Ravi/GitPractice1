@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="basePackage.Listeners"></listener>
+    </listeners>
+
+<parameter name="browser" value="chrome"></parameter>
+    <!--     <parameter name="url" value="https://opensource-demo.orangehrmlive.com"></parameter>  &ndash;&gt;-->
+    <test name="Grouping test">
+        <classes>
+            <!--            <class name="testPackage.test2"></class>-->
+            <class name="baseTest.DragnDrop"></class>
+            <class name="baseTest.Test1"></class>
+        </classes>
+    </test>
+</suite>
